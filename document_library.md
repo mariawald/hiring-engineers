@@ -1,6 +1,6 @@
 #Introducing the node-dogstatsd library for Datadog
 
-This library is a node.js client that implements the protocol DogStatsD, which is an extended version of StatsD. It enables you to send custom metrics into Datadog through the installed agent. Some of the benefits this library offers are:
+This library is a node.js client that implements the protocol DogStatsD. It enables you to send custom metrics into Datadog through the installed agent. Some of the benefits this library offers:
 
 * It's easy to use and configure.
 * It's compatible with old node versions.
@@ -82,7 +82,7 @@ $ npm install node-dogstatsd
 
 ##Error handling
 
-Any errors occurring in the library will "bubble up" into your code. You can catch them by subscribing to the error events in the socket. The socket is available as a property of your client object.
+Any errors occurring in the library will surface on your code. Catch them by subscribing to the error events in the socket. The socket is available as a property of your client object.
 
 ```JavaScript
 client.socket.on('error', function (exception) {
