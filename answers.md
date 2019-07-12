@@ -1,5 +1,5 @@
-#Tech Writer exercise
-##Prerequisites - Setup the environment
+# Tech Writer exercise
+## Prerequisites - Setup the environment
 
 I chose the recommended approach of spinning up a fresh linux VM via Vagrant. These are the steps I followed:
 
@@ -15,21 +15,21 @@ I chose the recommended approach of spinning up a fresh linux VM via Vagrant. Th
 
 2. Sign up for Datadog
 
-	![Signing up](./screenshots/4_signing_up.jpg "Setting up Vagrant part 2")
+	![Signing up](./screenshots/4_signing_up.png "Setting up Vagrant part 2")
 
 3. Get the Agent reporting metrics from your machine.
 
-	![Curl check](./screenshots/5.1_curl_not_installed.jpg "Curl check")
+	![Curl check](./screenshots/5.1_curl_not_installed.png "Curl check")
 
 	![Curl installation](./screenshots/5.2_curl_installing.jpg "Curl installation")
 
-	![Agent integration](./screenshots/6_install_datadog_agent.jpg "Agent integration")
+	![Agent integration](./screenshots/6_install_datadog_agent.png "Agent integration")
 
 	![Agent integration](./screenshots/7_agent_installed.jpg "Agent installed")
 
 	![Agent integration](./screenshots/9_agent_reporting_dashboard.jpg "Agent installed")
 
-##Collecting metrics
+## Collecting metrics
 
 1. Add tags in the Agent config file at `/etc/datadog-agent/datadog.yaml` and show us a screenshot of your host and its tags on the Host Map page in Datadog.
 
@@ -101,7 +101,7 @@ I chose the recommended approach of spinning up a fresh linux VM via Vagrant. Th
 	
 	**Answer**: Yes it is possible. In fact, it was my first approach. I could have modified the code to call gauge once every three times the check method was called by the agent (15secs * 3 = 45 secs). Instead I thought it would be more natural to just use the check configuration.
 
-##Visualizing data
+## Visualizing data
 
 1. Utilize the Datadog API to create a Timeboard that contains:
 
