@@ -1,0 +1,19 @@
+{
+  "title": "my_metric_dashboard",
+  "widgets": [
+    {
+      "definition":{
+        "type": "timeseries",
+        "requests":[{"q": "avg:my_metric{host:maria-ubuntu}"}]
+      }
+    },
+    {
+      "definition":{
+        "type": "timeseries",
+        "requests":[{"q": "anomalies(avg:mysql.innodb.mem_total{host:maria-ubuntu}, 'basic', 2)"}]
+      }
+    }
+  ],
+  "layout_type": "ordered",
+  "description": "The dashboard I have to do for the exercise"
+}
